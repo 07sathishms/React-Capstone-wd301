@@ -1,0 +1,35 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+@layer utilities {
+  /* Chrome, Safari and Opera */
+  .no-scrollbar::-webkit-scrollbar {
+    display: none;
+  }
+  .scbar::-webkit-scrollbar {
+    width: 8px;
+    height: 8px;
+  }
+
+  .scbar::-webkit-scrollbar-track {
+    border-radius: 5px;
+    background-color: rgb(220, 227, 227);
+  }
+  .scbar::-webkit-scrollbar-thumb {
+    border-radius: 5px;
+    background-color: rgb(220, 9, 5);
+  }
+
+
+  .scbard::-webkit-scrollbar-track {
+    border-radius: 5px;
+    background-color: rgb(36, 48, 67);
+  }
+
+  .no-scrollbar {
+    -ms-overflow-style: none; /* IE and Edge */
+    scrollbar-width: none; /* Firefox */
+  }
+}
